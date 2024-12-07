@@ -314,21 +314,81 @@ body {
 
 
 
+/* Estilos generales (para desktop y tablets) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Para dispositivos más pequeños como móviles */
 @media (max-width: 768px) {
-    .nav__logo h2 {
-        font-size: 20px;
+    .nav__link {
+        flex-direction: column;
+        align-items: center;
     }
 
     .hero__title {
-        font-size: 24px;
+        font-size: 1.8rem;
     }
 
-    .hero__container {
-        padding: 10px;
+    .hero__paragraph {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .about__main {
+        display: block;
+    }
+
+    .about__icons {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services__container {
+        display: block;
+    }
+
+    .services__box {
+        margin-bottom: 20px;
+    }
+
+    .footer__social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__icons {
+        margin: 0 10px;
+    }
+
+    .whatsapp-float-button {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 60px;
+        height: 60px;
     }
 }
 
-.why-choose-us__list li {
-    display: inline-block;
-    margin: 10px 20px;
+/* Para pantallas muy pequeñas (móviles más pequeños) */
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 1.5rem;
+    }
+
+    .hero__paragraph {
+        font-size: 0.9rem;
+    }
+
+    .footer__copyright {
+        font-size: 0.8rem;
+    }
 }
