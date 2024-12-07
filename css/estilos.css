@@ -318,3 +318,16 @@ body {
 
 
 
+@media (max-width: 768px) {
+    .nav__logo h2 {
+        font-size: 20px;
+    }
+
+    .hero__title {
+        font-size: 24px;
+    }
+
+    .hero__container {
+        padding: 10px;
+    }
+}
